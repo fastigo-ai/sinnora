@@ -11,7 +11,7 @@ const Navbar = () => {
         {/* Logo */}
         <div className="cursor-pointer">
           <Link to="/">
-            <img src={Logo} alt="" className="w-40 h-14" />
+            <img src={Logo} alt="" className="md:lgw-40 md:lgh-14 w-30 h-8" />
           </Link>
         </div>
 

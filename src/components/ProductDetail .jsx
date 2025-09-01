@@ -128,7 +128,7 @@ const ProductDetail = () => {
           </div>
 
           {/* Title + Tagline */}
-          <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 leading-snug">
+          <h1 className="text-2xl sm:text-3xl font-sans text-gray-900 leading-snug">
             {product.name}
           </h1>
           <p className="text-gray-500 text-sm">{product.tagline}</p>
@@ -136,7 +136,7 @@ const ProductDetail = () => {
           {/* Price Section */}
           <div>
             <div className="flex items-center gap-2">
-              <span className="text-2xl font-semibold text-gray-900">
+              <span className="text-2xl font-sans text-gray-900">
                 ₹{product.price.toLocaleString("en-IN")}
               </span>
               <span className="text-base text-gray-400 line-through">
@@ -203,7 +203,7 @@ const ProductDetail = () => {
             <h3 className="font-semibold text-gray-900 text-sm mb-1">
               Check Delivery
             </h3>
-            <div className="flex gap-2">
+            <div className="flex gap-2 w-1/2">
               <input
                 type="text"
                 placeholder="Enter Pincode"
@@ -216,12 +216,12 @@ const ProductDetail = () => {
           </div>
 
           {/* CTA Buttons */}
-          <div className="flex items-center gap-3 pt-2">
-            <button className="flex-1 flex items-center justify-center gap-2 bg-emerald-600 text-white font-medium py-2.5 rounded-lg shadow hover:scale-[1.02] transition text-sm">
+          <div className="flex items-center gap-3 pt-2 w-2/3">
+            <button className="flex-1 flex items-center justify-center gap-2 bg-white text-black border-black border font-medium py-2.5 rounded-lg shadow hover:scale-[1.02] transition text-sm">
               <ShoppingBag size={18} />
               Add to Cart
             </button>
-            <button className="flex-1 flex items-center justify-center gap-2 bg-red-500 text-white font-medium py-2.5 rounded-lg shadow hover:scale-[1.02] transition text-sm">
+            <button className="flex-1 flex items-center justify-center gap-2 bg-black text-white font-medium py-2.5 rounded-lg shadow hover:scale-[1.02] transition text-sm">
               <ShoppingBag size={18} />
               Buy Now
             </button>
